@@ -20,86 +20,135 @@
     "description": "Throw Exception"
   },
   "React useState": {
-     "prefix": "us",
-     "body": [
-       "const [$1, set$2] = useState($3);"
-     ]
-   },
-   "React useEffect": {
-     "prefix": "ue",
-     "body": [
-       "useEffect(() => {",
-       "  $1",
-       "}, [$2]);"
-     ]
-   },
-   "React useCallback": {
-     "prefix": "ucb",
-     "body": [
-       "useCallback(() => {",
-       "  $1",
-       "}, [$2]);"
-     ]
-   },
-   "React useMemo": {
-     "prefix": "umm",
-     "body": [
-       "useMemo(() => {",
-       "  $1",
-       "}, [$2]);"
-     ]
-   },
-   "Async React Function Component": {
-     "prefix": "arfc",
-     "body": [
-       "const $1 = async () => {",
-       "  return $2;",
-       "};",
-       "",
-       "export default $1;"
-     ]
-   },
-   "Async React Function Component with Props": {
-     "prefix": "arfcp",
-     "body": [
-       "type $1Props = {",
-       "",
-       "}",
-       "const $1 = async ({}: $1Props) => {",
-       "  return $2;",
-       "};",
-       "",
-       "export default $1;"
-     ]
-   },
-   "React Function Component": {
-     "prefix": "rfc",
-     "body": [
-       "const $1 = () => {",
-       "  return $2;",
-       "};",
-       "",
-       "export default $1;"
-     ]
-   },
-   "React Function Component with Props": {
-     "prefix": "rfcp",
-     "body": [
-       "type $1Props = {",
-       "",
-       "}",
-       "const $1 = ({}: $1Props) => {",
-       "  return $2;",
-       "};",
-       "",
-       "export default $1;"
-     ]
-   },
-   "Visual Divider": {
-		"prefix": "vd",
-		"body": [
-			"// ----------------------------------------------------------------------"
-		],
-		"description": "Divider to seperate code"
-	}
+    "prefix": "us",
+    "body": ["const [$1, set$2] = useState($3);"],
+    "description": "useState in React"
+  },
+  "React useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2]);"
+    ],
+    "description": "useEffect in React"
+  },
+  "React useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback(() => {",
+      "  $1",
+      "}, [$2]);"
+    ],
+    "description": "useCallback in React"
+  },
+  "React useMemo": {
+    "prefix": "umm",
+    "body": [
+      "useMemo(() => {",
+      "  $1",
+      "}, [$2]);"
+    ],
+    "description": "useMemo in React"
+  },
+  "Async React Function Component": {
+    "prefix": "arfc",
+    "body": [
+      "const $1 = async () => {",
+      "  return $2;",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Async funtion component in React"
+  },
+  "Async React Function Component with Props": {
+    "prefix": "arfcp",
+    "body": [
+      "type $1Props = {",
+      "",
+      "}",
+      "const $1 = async ({}: $1Props) => {",
+      "  return $2;",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Async funtion component with props in React"
+  },
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      "const $1 = () => {",
+      "  return $2;",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Funtion component in React"
+  },
+  "React Function Component with Props": {
+    "prefix": "rfcp",
+    "body": [
+      "type $1Props = {",
+      "",
+      "}",
+      "const $1 = ({}: $1Props) => {",
+      "  return $2;",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "Funtion component with props in React"
+  },
+  "Visual Divider": {
+    "prefix": "vd",
+    "body": ["// ----------------------------------------------------------------------"],
+    "description": "Divider to seperate code"
+  },
+  "Describe Block": {
+    "prefix": "desc",
+    "body": [
+      "describe('$1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "describe block in vitest"
+  },
+  "Describe Block Only": {
+    "prefix": "desco",
+    "body": [
+      "describe.only('$1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "describe only block in vitest"
+  },
+  "It Block": {
+    "prefix": "it",
+    "body": [
+      "it('should $1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "it block in vitest"
+  },
+  "It Only Block": {
+    "prefix": "ito",
+    "body": [
+      "it.only('should $1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "it only block in vitest"
+  },
+  "It Skip Block": {
+    "prefix": "its",
+    "body": [
+      "it.skip('should $1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "it skip block in vitest"
+  }
 }
