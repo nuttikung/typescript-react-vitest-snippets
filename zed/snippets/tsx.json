@@ -1,0 +1,105 @@
+{
+  "Log to the console": {
+    "prefix": "cl",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log to the console"
+  },
+  "Log warning to console": {
+    "prefix": "cw",
+    "body": ["console.warn($1);", "$0"],
+    "description": "Log warning to the console"
+  },
+  "Log error to console": {
+    "prefix": "ce",
+    "body": ["console.error($1);", "$0"],
+    "description": "Log error to the console"
+  },
+  "Throw Exception": {
+    "prefix": "throw",
+    "body": ["throw new Error(\"$1\");", "$0"],
+    "description": "Throw Exception"
+  },
+  "React useState": {
+     "prefix": "us",
+     "body": [
+       "const [$1, set$2] = useState($3);"
+     ]
+   },
+   "React useEffect": {
+     "prefix": "ue",
+     "body": [
+       "useEffect(() => {",
+       "  $1",
+       "}, [$2]);"
+     ]
+   },
+   "React useCallback": {
+     "prefix": "ucb",
+     "body": [
+       "useCallback(() => {",
+       "  $1",
+       "}, [$2]);"
+     ]
+   },
+   "React useMemo": {
+     "prefix": "umm",
+     "body": [
+       "useMemo(() => {",
+       "  $1",
+       "}, [$2]);"
+     ]
+   },
+   "Async React Function Component": {
+     "prefix": "arfc",
+     "body": [
+       "const $1 = async () => {",
+       "  return $2;",
+       "};",
+       "",
+       "export default $1;"
+     ]
+   },
+   "Async React Function Component with Props": {
+     "prefix": "arfcp",
+     "body": [
+       "type $1Props = {",
+       "",
+       "}",
+       "const $1 = async ({}: $1Props) => {",
+       "  return $2;",
+       "};",
+       "",
+       "export default $1;"
+     ]
+   },
+   "React Function Component": {
+     "prefix": "rfc",
+     "body": [
+       "const $1 = () => {",
+       "  return $2;",
+       "};",
+       "",
+       "export default $1;"
+     ]
+   },
+   "React Function Component with Props": {
+     "prefix": "rfcp",
+     "body": [
+       "type $1Props = {",
+       "",
+       "}",
+       "const $1 = ({}: $1Props) => {",
+       "  return $2;",
+       "};",
+       "",
+       "export default $1;"
+     ]
+   },
+   "Visual Divider": {
+		"prefix": "vd",
+		"body": [
+			"// ----------------------------------------------------------------------"
+		],
+		"description": "Divider to seperate code"
+	}
+}
